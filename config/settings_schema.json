@@ -1,0 +1,37 @@
+{
+  "name": "Theme Settings",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General Settings"
+    },
+    {
+      "type": "text",
+      "id": "theme_name",
+      "label": "Theme Name",
+      "default": "My Shopify Theme"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#ff0000"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_feature",
+      "label": "Enable Feature",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Footer Settings"
+    },
+    {
+      "type": "textarea",
+      "id": "footer_text",
+      "label": "Footer Text",
+      "default": "© 2023 My Shopify Theme"
+    }
+  ]
+}

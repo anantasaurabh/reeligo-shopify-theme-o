@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ shop.name }}</title>
+    <link rel="stylesheet" href="{{ 'styles.css' | asset_url }}">
+</head>
+<body>
+    {% section 'header' %}
+    
+    <main>
+        <h1>Welcome to {{ shop.name }}</h1>
+        <p>Your one-stop shop for amazing products!</p>
+        <div class="featured-products">
+            {% for product in collections.frontpage.products %}
+                <div class="product">
+                    <h2>{{ product.title }}</h2>
+                    <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+                    <p>{{ product.price | money }}</p>
+                    <a href="{{ product.url }}">View Product</a>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+
+    {% snippet 'footer' %}
+</body>
+</html>

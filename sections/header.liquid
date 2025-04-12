@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="logo">
+    <a href="{{ shop.url }}">
+      <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}">
+    </a>
+  </div>
+  <nav class="navigation">
+    <ul>
+      {% for link in linklists.main.links %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

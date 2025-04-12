@@ -1,0 +1,20 @@
+<div class="product">
+  <h1>{{ product.title }}</h1>
+  <div class="product-images">
+    {% for image in product.images %}
+      <img src="{{ image.src | img_url: 'large' }}" alt="{{ image.alt | escape }}" />
+    {% endfor %}
+  </div>
+  <div class="product-description">
+    {{ product.description }}
+  </div>
+  <div class="product-price">
+    <span class="price">{{ product.price | money }}</span>
+  </div>
+  <div class="product-add-to-cart">
+    <form action="/cart/add" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+</div>

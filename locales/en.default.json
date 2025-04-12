@@ -1,0 +1,23 @@
+{
+  "general": {
+    "welcome": "Welcome to our Shopify store!",
+    "shop_now": "Shop Now",
+    "view_cart": "View Cart"
+  },
+  "product": {
+    "add_to_cart": "Add to Cart",
+    "out_of_stock": "Out of Stock",
+    "in_stock": "In Stock"
+  },
+  "header": {
+    "home": "Home",
+    "about_us": "About Us",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "footer": {
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "follow_us": "Follow Us"
+  }
+}
